@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-07T12:35:25.148Z",
+    "end": "2022-09-07T12:35:37.482Z",
+    "duration": 12334,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "221e8aa6-7a0b-4595-9190-f60008ec02fc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\viewporttest.cy.js",
+      "file": "cypress\\e2e\\viewporttest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4b898c4b-7891-4651-8654-f9a2e4215962",
+          "title": "different resolutions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open in machbook-13",
+              "fullTitle": "different resolutions open in machbook-13",
+              "timedOut": null,
+              "duration": 3218,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('macbook-13');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "2e82e1d7-53ec-4bf3-bfb2-8e5ac52a0401",
+              "parentUUID": "4b898c4b-7891-4651-8654-f9a2e4215962",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open in samsung-note9",
+              "fullTitle": "different resolutions open in samsung-note9",
+              "timedOut": null,
+              "duration": 3556,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('samsung-note9');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "04841050-41d3-4774-99c4-e2c048298e8b",
+              "parentUUID": "4b898c4b-7891-4651-8654-f9a2e4215962",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open in 550 and 750",
+              "fullTitle": "different resolutions open in 550 and 750",
+              "timedOut": null,
+              "duration": 3097,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(550, 750);\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "71d1c6ef-6aca-4929-b738-5d2251ba820a",
+              "parentUUID": "4b898c4b-7891-4651-8654-f9a2e4215962",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e82e1d7-53ec-4bf3-bfb2-8e5ac52a0401",
+            "04841050-41d3-4774-99c4-e2c048298e8b",
+            "71d1c6ef-6aca-4929-b738-5d2251ba820a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9871,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

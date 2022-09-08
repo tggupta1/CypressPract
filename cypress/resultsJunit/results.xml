@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.8280" tests="5" failures="0" skipped="4">
+  <testsuite name="Root Suite" timestamp="2022-09-06T18:16:38" tests="0" file="cypress\e2e\orangeCRM.cy.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Orange HRM Test Cases" timestamp="2022-09-06T18:16:38" tests="5" time="20.8280" failures="0">
+    <testcase name="Orange HRM Test Cases verfiy searchbox" time="20.8280" classname="verfiy searchbox">
+    </testcase>
+  </testsuite>
+</testsuites>

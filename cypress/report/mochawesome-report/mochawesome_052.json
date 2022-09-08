@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2022-09-08T10:18:57.356Z",
+    "end": "2022-09-08T10:19:32.161Z",
+    "duration": 34805,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 50,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "497aa58c-58d5-4274-8b4c-da7d1dea7214",
+      "title": "",
+      "fullFile": "cypress\\e2e\\e2eSmoke\\amazon.cy.js",
+      "file": "cypress\\e2e\\e2eSmoke\\amazon.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "77b2a326-99f7-4936-97a7-a6233eee08df",
+          "title": "Amazon Portal Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify search in amazon",
+              "fullTitle": "Amazon Portal Testing verify search in amazon",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "6ec65a25-8c23-4a5b-af38-6923d9276216",
+              "parentUUID": "77b2a326-99f7-4936-97a7-a6233eee08df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario 1",
+              "fullTitle": "Amazon Portal Testing Scenario 1",
+              "timedOut": null,
+              "duration": 30834,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"https://www.amazon.com/\");\ncy.visit(Cypress.env('url'));\ncy.get('#nav-flyout-ya-signin').invoke('show');\ncy.contains('Sign').click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element is not visible:\n\n`<a href=\"https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;\" rel=\"nofollow\" class=\"nav-action-button\" data-nav-role=\"signin\" data-nav-ref=\"nav_signin\">...</a>`\n\nThis element `<a.nav-action-button>` is not visible because its parent `<div#nav-flyout-accountList.nav-coreFlyout.nav-flyout>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element is not visible:\n\n`<a href=\"https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;\" rel=\"nofollow\" class=\"nav-action-button\" data-nav-role=\"signin\" data-nav-ref=\"nav_signin\">...</a>`\n\nThis element `<a.nav-action-button>` is not visible because its parent `<div#nav-flyout-accountList.nav-coreFlyout.nav-flyout>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (https://www.amazon.in/__cypress/runner/cypress_runner.js:157582:76)\n    at $Cy.ensureStrictVisibility (https://www.amazon.in/__cypress/runner/cypress_runner.js:157598:12)\n    at runAllChecks (https://www.amazon.in/__cypress/runner/cypress_runner.js:143470:14)\n    at retryActionability (https://www.amazon.in/__cypress/runner/cypress_runner.js:143525:16)\n    at tryCatcher (https://www.amazon.in/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise.attempt.Promise.try (https://www.amazon.in/__cypress/runner/cypress_runner.js:8592:29)\n    at whenStable (https://www.amazon.in/__cypress/runner/cypress_runner.js:162678:65)\n    at https://www.amazon.in/__cypress/runner/cypress_runner.js:162132:14\n    at tryCatcher (https://www.amazon.in/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (https://www.amazon.in/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (https://www.amazon.in/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (https://www.amazon.in/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (https://www.amazon.in/__cypress/runner/cypress_runner.js:9435:18)\n    at Promise._fulfill (https://www.amazon.in/__cypress/runner/cypress_runner.js:9379:18)\n    at https://www.amazon.in/__cypress/runner/cypress_runner.js:10993:46\nFrom Your Spec Code:\n    at Context.eval (https://www.amazon.in/__cypress/tests?p=cypress\\e2e\\e2eSmoke\\amazon.cy.js:110:25)",
+                "diff": null
+              },
+              "uuid": "01bde73e-1299-43e6-a9cb-2fd1d8b35df4",
+              "parentUUID": "77b2a326-99f7-4936-97a7-a6233eee08df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "01bde73e-1299-43e6-a9cb-2fd1d8b35df4"
+          ],
+          "pending": [
+            "6ec65a25-8c23-4a5b-af38-6923d9276216"
+          ],
+          "skipped": [],
+          "duration": 30834,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

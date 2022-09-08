@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 4,
+    "failures": -4,
+    "start": "2022-09-06T18:38:31.582Z",
+    "end": "2022-09-06T18:38:55.071Z",
+    "duration": 23489,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 80,
+    "other": 4,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b2eb2b2-955e-472e-8d12-28f3fb9fe756",
+      "title": "",
+      "fullFile": "cypress\\e2e\\orangeCRM.cy.js",
+      "file": "cypress\\e2e\\orangeCRM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b0d3649e-b982-4539-96c7-93ea3f8ba99c",
+          "title": "Orange HRM Test Cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify Lambda test ",
+              "fullTitle": "Orange HRM Test Cases verify Lambda test ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "a92cb476-8152-4f22-8c9f-f9f942019a0c",
+              "parentUUID": "b0d3649e-b982-4539-96c7-93ea3f8ba99c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify checkbox ",
+              "fullTitle": "Orange HRM Test Cases verify checkbox ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "04f7a176-f602-421b-96fc-dbb8c2f45294",
+              "parentUUID": "b0d3649e-b982-4539-96c7-93ea3f8ba99c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify file upload",
+              "fullTitle": "Orange HRM Test Cases verify file upload",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "1347f30f-cf2b-4ce2-8977-9bb74e5e9381",
+              "parentUUID": "b0d3649e-b982-4539-96c7-93ea3f8ba99c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify multiple uploads",
+              "fullTitle": "Orange HRM Test Cases Verify multiple uploads",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "79918bff-4d71-4a19-862c-62a75b36f3a0",
+              "parentUUID": "b0d3649e-b982-4539-96c7-93ea3f8ba99c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verfiy searchbox",
+              "fullTitle": "Orange HRM Test Cases verfiy searchbox",
+              "timedOut": null,
+              "duration": 18722,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/index.php'); //cy.get('input#search_query_top').type('dress')\ncy.xpath(`//input[@id='search_query_top']`).type('dress');\ncy.get('button.button-search').click(); //cy.get('span.lighter').contains()\ncy.contains('span.lighter', 'dress');",
+              "err": {},
+              "uuid": "6c0676c1-6c80-4f4b-87f2-534c06437762",
+              "parentUUID": "b0d3649e-b982-4539-96c7-93ea3f8ba99c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6c0676c1-6c80-4f4b-87f2-534c06437762"
+          ],
+          "failures": [],
+          "pending": [
+            "a92cb476-8152-4f22-8c9f-f9f942019a0c",
+            "04f7a176-f602-421b-96fc-dbb8c2f45294",
+            "1347f30f-cf2b-4ce2-8977-9bb74e5e9381",
+            "79918bff-4d71-4a19-862c-62a75b36f3a0"
+          ],
+          "skipped": [],
+          "duration": 18722,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

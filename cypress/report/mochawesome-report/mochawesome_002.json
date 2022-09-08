@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-06T18:36:52.675Z",
+    "end": "2022-09-06T18:37:53.744Z",
+    "duration": 61069,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c437fe6-5dd1-413f-b134-ee2143b165c7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Firsttest.cy.js",
+      "file": "cypress\\e2e\\Firsttest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "610c7a64-a8c1-4439-a265-dbf55c16f8a3",
+          "title": "Freshworks portal automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First Test, Verify url for platform link",
+              "fullTitle": "Freshworks portal automation First Test, Verify url for platform link",
+              "timedOut": null,
+              "duration": 58090,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.freshworks.com');\ncy.contains('Platform');\ncy.contains('Platform').click();\ncy.url().should('include', '/platform');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'https://www.freshworks.com/#' to include '/platform'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'https://www.freshworks.com/#' to include '/platform'\n    at Context.eval (https://www.freshworks.com/__cypress/tests?p=cypress\\e2e\\Firsttest.cy.js:104:14)",
+                "diff": null
+              },
+              "uuid": "75378879-87ab-469c-bff6-e20d27a0d98a",
+              "parentUUID": "610c7a64-a8c1-4439-a265-dbf55c16f8a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "75378879-87ab-469c-bff6-e20d27a0d98a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 58090,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
