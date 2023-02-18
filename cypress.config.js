@@ -1,8 +1,14 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "znrnd9",
+  defaultCommandTimeout: 4000,
+  pageLoadTimeout: 30000,
+
   e2e: {
+    baseUrl: 'https://demoqa.com/',
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
     "reporter": "junit",
     "reporterOptions": {
       "mochaFile": "cypress/resultsJunit/results.xml",
@@ -24,6 +30,9 @@ module.exports = defineConfig({
     "responseTimeout": 15000
   },
   "env":{
-    "url":"https://www.amazon.in"
+    "url":"https://spicejet.com/"
   },
 });
+
+
+require('@applitools/eyes-cypress')(module);

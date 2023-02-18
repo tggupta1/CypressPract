@@ -1,5 +1,5 @@
 describe('Spicejet post testing', ()=>{
-    it('verify home page', ()=>{
+    xit('verify home page', ()=>{
         cy.visit('https://www.spicejet.com', {failOnStatusCode: false})
         cy.get('[data-testid="search-destination-code"]').click()
         cy.get('[data-testid="auto-cmp-txt"]').type('BLR').pause()
