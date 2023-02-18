@@ -7,6 +7,7 @@ describe('Amazon Portal Testing', ()=>{
     })
 ///sample code
 //2nd commit
+    //3rd commit from Git
     it('Scenario 1', function (){
         cy.visit("https://www.amazon.com/");
         //cy.visit(Cypress.env('url'))
