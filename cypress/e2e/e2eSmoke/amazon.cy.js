@@ -5,7 +5,8 @@ describe('Amazon Portal Testing', ()=>{
             cy.get('input#twotabsearchtextbox').type('Apple Mac Book')
         })
     })
-
+///sample code
+//2nd commit
     it('Scenario 1', function (){
         cy.visit("https://www.amazon.com/");
         //cy.visit(Cypress.env('url'))
